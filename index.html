@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="logo">My Portfolio</div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Hello, I'm <span class="gradient-text">Sushil Kumar</span></h1>
+        <p>Creative Developer | Designer | Innovator</p>
+        <button class="cta-btn" onclick="scrollToSection('projects')">View My Work</button>
+    </div>
+    <canvas id="bg"></canvas>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+    <h2>About Me</h2>
+    <p>Hi there! I'm Sushil Kumar, a passionate and experienced software developer specializing in crafting intuitive, high-performance applications and websites. With a deep understanding of modern web technologies and software development practices, I design and build solutions that not only meet client expectations but also push the boundaries of what's possible.
+        </p>
+        <br>
+        <p>I am proficient in JavaScript, Node.js, Java (Spring Boot), HTML/CSS, and MySQL, and have hands-on experience with MongoDB and cloud technologies. I thrive on tackling complex challenges, whether it's optimizing backend performance or creating seamless, dynamic frontend experiences.
+        </p>
+        <br>
+        <P> What drives me is my dedication to continuous learning and my commitment to delivering clean, efficient, and scalable code. Whether working on full-stack development, integrating third-party APIs, or enhancing user interfaces, I aim to deliver solutions that stand out for their quality and user experience. 
+       
+        </P>     <br>
+        
+        Feel free to explore my portfolio, and if you have an exciting project or collaboration in mind, don’t hesitate to reach out. Let’s build something amazing together!</p>
+</section>
+
+<!-- Projects Section -->
+<section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-gallery">
+        <div class="project-card">
+            <img src="https://via.placeholder.com/300" alt="Project 1">
+            <div class="project-info">
+                <h3>Project 1</h3>
+                <p>Interactive website with smooth animations and modern UI.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="https://via.placeholder.com/300" alt="Project 2">
+            <div class="project-info">
+                <h3>Project 2</h3>
+                <p>E-commerce platform with real-time payments.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="https://via.placeholder.com/300" alt="Project 3">
+            <div class="project-info">
+                <h3>Project 3</h3>
+                <p>Portfolio website with 3D animations and advanced features.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+        <div class="skill-item">HTML</div>
+        <div class="skill-item">CSS</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">Node.js</div>
+        <div class="skill-item">Spring Boot</div>
+        <div class="skill-item">MongoDB & MySQL</div>
+    </div>
+</section>
+
+<!-- Testimonials Slider -->
+<section class="testimonials">
+    <h2>What People Say</h2>
+    <div class="testimonial-slider">
+        <div class="testimonial active">
+            <p>"Incredible work! The animations are smooth and the design is stunning."</p>
+            <span>- Client 1</span>
+        </div>
+        <div class="testimonial">
+            <p>"A professional and creative developer who delivered beyond expectations."</p>
+            <span>- Client 2</span>
+        </div>
+        <div class="testimonial">
+            <p>"The website is fast, responsive, and visually appealing. Great job!"</p>
+            <span>- Client 3</span>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="cta-btn">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2025 My Portfolio | Designed by You</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
