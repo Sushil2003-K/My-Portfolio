@@ -1,0 +1,255 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, #4A00E0, #8E2DE2);
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-links li a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding: 20px;
+}
+#bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #FF6B6B, #FFD93D, #6BCB77, #4D96FF);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.cta-btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #FF6B6B, #6BCB77);
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Sections */
+.about, .projects, .skills, .testimonials, .contact {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about h2, .projects h2, .skills h2, .testimonials h2, .contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+
+
+.about p {
+    text-align: center;
+}
+
+.projects .project-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.project-card {
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Skills */
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px 30px;
+    border-radius: 20px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Testimonials Slider */
+.testimonial-slider {
+    position: relative;
+    height: 200px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.testimonial {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    transition: opacity 1s;
+}
+
+.testimonial.active {
+    opacity: 1;
+}
+
+.testimonial p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Contact Form */
+.contact form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact input, .contact textarea {
+    width: 300px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: #333;
+}
+
+.contact textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #4D96FF, #6BCB77);
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contact button:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+}
